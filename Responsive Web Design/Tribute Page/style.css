@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Eczar&family=Rubik&family=Work+Sans&family=Encode+Sans+SC&display=swap');
+
+body {
+    font-size: 21px;
+}
+
+#timeline {
+    font-size: 30px;
+    font-family: "Work Sans", sans-serif;
+}
+
+footer {
+    font-family: 'Encode Sans SC', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    background-color: #e63946;
+    margin: 0 20px 20px 20px;
+    border-radius: 0 0 20px 20px;
+    color: #f1faee;
+    padding: 5px;
+    letter-spacing: 2px;
+}
+
+.footer-icon {
+    padding: 5px;
+}
+
+#main {
+    background-color: #22272c;
+    color: #f1faee;
+    margin: 20px 20px 0 20px;
+    border-radius: 20px 20px 0 0;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    overflow: auto;
+}
+
+#title {
+    font-size: 60px;
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    margin: 100px 100px 20px 100px;
+}
+
+header {
+    margin-bottom: 30px;
+}
+
+header p {
+    font-size: 20px;
+    font-style: italic;
+}
+
+.tag-line {
+    display: block;
+    height: 2px;
+    background-color: #e63946;
+    border: none;
+    margin: 1em 0;
+    padding: 0;
+    width: 50%;
+    margin-left: 25% !important;
+    margin-right: 25% !important;
+}
+
+#img-caption {
+    margin: 15px;
+    font-size: 20px;
+    font-style: italic;
+}
+
+#image {
+    margin: auto;
+    border-radius: 5px;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border: 3px solid dodgerblue;
+    padding: 5px;
+}
+
+a {
+    color: dodgerblue;
+    text-decoration: none;
+}
+
+ul {
+    margin-left: 25% !important;
+    margin-right: 25% !important;
+    font-family: 'Eczar', serif;
+    text-align: justify;
+    list-style-type: symbols("/24B6");
+}
+
+li {
+    margin: 10px;
+    background-color: #22272a;
+}
+
+#know-more{
+    margin: 50px;
+}
