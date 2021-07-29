@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="survey-form">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Survey Form</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <h1 id="title" class="text-center">Course Survey Form</h1>
+        <p id="description" class="description text-center">
+            We would love to know your current skill set in order to improve the courses
+        </p>
+    </header>
+    <main>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input
+                        type="text"
+                        name="name"
+                        id="name"
+                        class="form-control"
+                        placeholder="Enter your name"
+                        required
+                />
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        class="form-control"
+                        placeholder="Enter your Email"
+                        required
+                />
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+                <input
+                        type="number"
+                        name="age"
+                        id="number"
+                        min="10"
+                        max="99"
+                        class="form-control"
+                        placeholder="Age"
+                />
+            </div>
+            <div class="form-group">
+                <p>Which option best describes your current role?</p>
+                <select id="dropdown" name="role" class="form-control" required>
+                    <option disabled selected value>Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="job">Full Time Job</option>
+                    <option value="learner">Full Time Learner</option>
+                    <option value="preferNo">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>Would you recommend our courses to a friend?</p>
+                <label>
+                    <input
+                            name="user-recommend"
+                            value="definitely"
+                            type="radio"
+                            class="input-radio"
+                            checked
+                    />Definitely
+                </label>
+                <label>
+                    <input
+                            name="user-recommend"
+                            value="maybe"
+                            type="radio"
+                            class="input-radio"
+                    />Maybe
+                </label>
+                <label>
+                    <input
+                            name="user-recommend"
+                            value="not-sure"
+                            type="radio"
+                            class="input-radio"
+                    />Not sure
+                </label>
+            </div>
+
+            <div class="form-group">
+                <p>
+                    What was your motivation to finish this course?
+                </p>
+                <select id="most-like" name="mostLike" class="form-control" required>
+                    <option disabled selected value>Select an option</option>
+                    <option value="challenges">Challenges</option>
+                    <option value="projects">Projects</option>
+                    <option value="community">Community</option>
+                    <option value="openSource">Open Source</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>
+                    What would you like to see improved?
+                    <span class="clue">(Check all that apply)</span>
+                </p>
+
+                <label>
+                    <input
+                            name="prefer"
+                            value="java"
+                            type="checkbox"
+                            class="input-checkbox"
+                    />Java
+                </label>
+                <label>
+                    <input
+                            name="prefer"
+                            value="cpp"
+                            type="checkbox"
+                            class="input-checkbox"
+                    />C++
+                </label>
+                <label>
+                    <input
+                            name="prefer"
+                            value="c"
+                            type="checkbox"
+                            class="input-checkbox"
+                    />C
+                </label>
+                <label>
+                    <input
+                            name="prefer"
+                            value=python"
+                            type="checkbox"
+                            class="input-checkbox"
+                    />Python
+                </label>
+                <label>
+                    <input
+                            name="prefer"
+                            value="javascript"
+                            type="checkbox"
+                            class="input-checkbox"
+                    />JavaScript
+                </label>
+            </div>
+
+            <div class="form-group">
+                <p>Anything else you wish to add?</p>
+                <textarea
+                        id="comments"
+                        class="input-textarea"
+                        name="comment"
+                        placeholder="Enter your comment here..."
+                ></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">
+                    Submit
+                </button>
+            </div>
+        </form>
+    </main>
+</div>
+
+<footer class="footer-panel">
+    <p class="footer-text">Developed by N.Krishna Raj</p>
+</footer>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
